@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
+/* main {
+overflow: ;
+} */
+
 .App {
   display: flex;
   flex-direction: column;
@@ -16,4 +20,36 @@
   color: teal;
   font-family: 'Pacifico', cursive;
   font-size: 50px;
+}
+
+.card-container {
+  width: 100vw;
+  height: 80vh;
+}
+
+.card {
+  border: 6px solid teal;
+  border-radius: 4px;
+  margin: 8px;
+  background: white;
+  color: teal;
+  height: 200px;
+  width: 250px;
+}
+
+.card-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-box{
+height: 30px;
+width: 200px;
+margin: 5px;
+}
+
+.submit-button{
+height: 30px;
+width: 150px;
+margin: 5px;
 }
