@@ -2,15 +2,14 @@ import React from 'react'
 import './App.css'
 
 const Card = (props) => {
-  console.log(props, 'props')
   const allCards = props.reservations.map(reservation => {
     return (
     <div className='card'>
-      <p>{reservation.id}</p>
-      <p>{reservation.name}</p>
-      <p>{reservation.date}</p>
-      <p>{reservation.time}</p>
-      <p>{reservation.number}</p>
+      {/* <p className='p1'>{reservation.id}</p> */}
+      <p className='p1'>{reservation.name}</p>
+      <p className='p2'>{reservation.date}</p>
+      <p className='p3'>{reservation.time} pm</p>
+      <p className='p4'>Number of guests: {reservation.number}</p>
     </div>
     )
   })
